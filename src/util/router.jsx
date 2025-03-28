@@ -19,7 +19,7 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: isAuthenticated() ? <Navigate to="/profile" replace/> : <RegisterPage />,
+                element: <RegisterPage />,
             },
             {
                 path: "/login",
