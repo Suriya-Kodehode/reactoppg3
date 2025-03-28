@@ -24,11 +24,16 @@ function LoginPage() {
         setLocalError("");
         setLoading(true);
         try {
-            await logInUser({
+            const response = await logInUser({
                 identifier: formData.identifier,
                 password: formData.password,
             });
-            setTimeout(() => navigate("/profile"), 1000)
+            if (response && response.success) {
+                setTimeout(() => navigate("/profile"), 1000)
+            } else {
+                setLocalError("Invalid username or password.")
+            }
+            
         } catch (err) {
             console.error("Login failed:", err);
             setLocalError(err.message || "An unexpected error occurred. Please try again.");
