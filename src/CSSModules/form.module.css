@@ -1,0 +1,35 @@
+
+.editct {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+.editct div :not(.editButton) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.editct label {
+    font-size: 1.3rem;
+    text-align: left;
+}
+.editct div input {
+    width: 100%;
+    height: 1.5rem;
+    font-size: 1.3rem;
+    padding: 0.3rem;
+}
+.editct div input[placeholder] {
+    font-size: 1rem;
+}
+
+.editButton {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 0 1rem;
+}
+

@@ -1,0 +1,21 @@
+.error {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.error div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.errorText {
+    gap: 0;
+    margin: 0;
+}
+.errorButton {
+    gap: 1rem;
+    margin: 1rem 0;
+}

@@ -1,0 +1,53 @@
+
+.registerPage {
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding: 10vh 0 0 0;
+}
+.registerForm {
+    width: 50%;
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.registerForm div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.registerForm div label {
+    width: 100%;
+    font-size: 1.3rem;
+    text-align: left;
+}
+.registerForm div input {
+    width: 100%;
+    height: 1.5rem;
+    font-size: 1.3rem;
+    padding: 0.3rem;
+}
+.registerForm div input[placeholder] {
+    font-size: 1rem;
+}
+
+.error {
+    color: red;
+    font-size: 1.3rem;
+}
+
+.loginLink {
+    margin-top: 1rem;
+}
+.loginLink p {
+   margin: 0;
+}
+.loginLink a {
+    color: rgb(185, 230, 104);
+    text-decoration: none;
+}
