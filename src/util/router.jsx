@@ -23,7 +23,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/login",
-                element: isAuthenticated() ? <Navigate to="/profile" replace/> : <LoginPage/>,
+                element: <LoginPage/>,
             },
             {
                 path: "/profile",
